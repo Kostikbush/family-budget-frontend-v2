@@ -1,0 +1,46 @@
+@import 'shared/style/colors.scss';
+
+.tooltip {
+	display: flex;
+	flex: 1 1 0;
+	background-color: $background;
+	color: #fff;
+	animation: 0.2s scale linear;
+	transition: 0.2s;
+	z-index: 100;
+	max-width: 350px;
+	left: 30px;
+	border-radius: 5px;
+	position: absolute;
+	box-shadow: 0px 0px 4px 1px rgba(255, 0, 236, 0.2);
+}
+.tooltipChild {
+	padding: 5px;
+	position: relative;
+}
+.tooltipText {
+	font-size: 10px;
+	display: flex;
+	width: 100%;
+	flex: 1 1 0;
+}
+.icon {
+	position: absolute;
+	top: -8px;
+	left: 33%;
+	color: $background;
+}
+@keyframes scale {
+	from {
+		transform: scale(0);
+	}
+	50% {
+		transform: scale(1);
+	}
+	80% {
+		transform: scale(1.2);
+	}
+	to {
+		transform: scale(1);
+	}
+}

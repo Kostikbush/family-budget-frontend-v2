@@ -1,0 +1,71 @@
+{
+	"name": "family-budget-frontend",
+	"imports": {
+		"baseUrl": ".",
+		"paths": {
+			"@/*": "./src/*",
+			"@app": "./src/app/*",
+			"@entities": "./src/entities/*",
+			"@features": "./src/features/*",
+			"@page": "./src/page/*",
+			"@shared": "./src/shared/*"
+		}
+	},
+	"private": true,
+	"version": "0.0.0",
+	"type": "module",
+	"scripts": {
+		"dev": "vite --port 3000",
+		"build": "tsc && vite build",
+		"lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+		"preview": "vite preview",
+		"tunnel": "vk-tunnel --insecure=1 --http-protocol=https --ws-protocol=wss --host=0.0.0.0 --port=3000"
+	},
+	"dependencies": {
+		"@apollo/client": "^3.8.7",
+		"@testing-library/jest-dom": "^6.1.4",
+		"@testing-library/react": "^14.0.0",
+		"@testing-library/user-event": "^14.5.1",
+		"@types/jest": "^29.5.7",
+		"@types/node": "^20.8.10",
+		"@types/yup": "^0.32.0",
+		"@vkontakte/icons": "^2.74.0",
+		"@vkontakte/vk-bridge": "^2.11.2",
+		"@vkontakte/vk-mini-apps-router": "^1.1.1",
+		"@vkontakte/vk-tunnel": "^0.1.4",
+		"@vkontakte/vkui": "^5.9.5",
+		"@vkontakte/vkui-tokens": "^4.41.0",
+		"cross-env": "^7.0.3",
+		"graphql": "^16.8.1",
+		"prettier-plugin-organize-imports": "^3.2.3",
+		"react": "^18.2.0",
+		"react-dom": "^18.2.0",
+		"react-icons": "^4.11.0",
+		"react-power-tooltip": "^1.0.2",
+		"react-scripts": "^5.0.1",
+		"sass": "^1.69.5",
+		"storage-facade": "^4.0.6",
+		"storage-facade-indexeddb": "^1.0.1",
+		"web-vitals": "^3.5.0",
+		"yaeti": "^1.0.3",
+		"yup": "^1.3.2",
+		"zustand": "^4.4.6"
+	},
+	"devDependencies": {
+		"@graphql-codegen/cli": "^5.0.0",
+		"@graphql-codegen/client-preset": "^4.1.0",
+		"@types/react": "^18.2.36",
+		"@types/react-dom": "^18.2.14",
+		"@types/react-power-tooltip": "^1.0.5",
+		"@typescript-eslint/eslint-plugin": "^6.0.0",
+		"@typescript-eslint/parser": "^6.0.0",
+		"@vitejs/plugin-react": "^4.0.3",
+		"eslint": "^8.45.0",
+		"eslint-plugin-react-hooks": "^4.6.0",
+		"eslint-plugin-react-refresh": "^0.4.3",
+		"husky": "^8.0.3",
+		"typescript": "^5.2.2",
+		"vite": "^4.4.5",
+		"vite-plugin-multi-device": "^1.0.1"
+	}
+}
